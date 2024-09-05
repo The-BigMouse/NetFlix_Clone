@@ -1,0 +1,48 @@
+.movie-grid-container {
+  padding: 20px;
+  background-color: #141414; /* Dark background to mimic Netflix's dark theme */
+}
+
+.section-title {
+  color: #e5e5e5;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e50914; /* Red underline for emphasis */
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+.movie-card {
+  background-color: #333;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.movie-poster {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.movie-title {
+  color: #e5e5e5;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+}
